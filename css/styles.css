@@ -4,4 +4,40 @@ body {
   color: #7C6A0A;
   background-color: #FFEFE7;
   font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  inline-size: 100%;
+  padding-block: 2rem;
+  padding-inline: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 1.5rem;
+}
+nav .nav-title {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #7C6A0A;
+}
+nav .nav-title:hover {
+  text-decoration: underline;
+}
+nav .nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav .nav-list .nav-img {
+  display: block;
+}
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    gap: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
